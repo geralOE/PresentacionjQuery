@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><3 jQuery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />                  
+    <link rel="stylesheet" type="text/css" href="css/prettify.css" media="all" />                  
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" /> 
+    <link rel="stylesheet" href="css/hot-sneaks/jquery-ui-1.10.2.custom.css" />
+    <link rel="stylesheet" href="css/jquery.jqplot.min.css" />
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/kickstart.js"></script>                                  
+    <script type="text/javascript" src="js/prettify.js"></script>                                  
+    <script src="js/jquery-ui-1.10.2.custom.js"></script>                         
+    <script src="js/jquery.jqplot.js"></script>                         
+    <script src="js/misDemos.js"></script>                         
+</head>
+
+<body>
+
+
+<ul class="menu center" >
+  <li><h4><a href=""><i class="icon-heart"></i>jQuery</a></h4></li>
+</ul>
+<div class="col_12">
+1. Agregar biblioteca de jQuery al HTML <code>&lt;script type="text/javascript" src="js/jquery-1.6.min.js" &gt;&lt;/script&gt;</code>
+     
+</div>  
+
+<div class="grid">
+      
+    
+    <!-- tabs -->    
+    <ul class="tabs left">
+      <li class="current"><a href="#tab1">Primer código con jQuery</a></li>
+      <li><a href="#tab_jqui">jQuery UI</a></li>
+      <li><a href="#tab_slideshow">Slideshow</a></li>
+      <li><a href="#tab_referencias">Referencias de ejemplos</a></li>
+    </ul>
+
+    <!-- tab -->
+    <div id="tab1" class="tab-content">
+         <pre class="prettyprint lang-js">
+        $(document).ready(function(){
+        
+            $("span").html("Hola mundo!");
+        
+        });
+      </pre>
+    </div>
+    
+    <!-- tab -->
+    <div id="tab_jqui" class="tab-content">
+        <ul>
+            <li style="list-style-type: none"><i class="icon-ok"></i>Datepicker</li>
+            <li style="list-style-type: none"><i class="icon-ok"></i>Autocomplete</li>
+            <li style="list-style-type: none"><i class="icon-ok"></i>Drag & drop</li>
+            <li style="list-style-type: none"><i class="icon-ok"></i>Dialogos</li>
+        </ul>
+        
+        <p>Date: <input type="text" id="datepicker" /></p>        
+        
+        <button id="opener">Abri diálogo</button>
+        <div id="dialog" title="Basic dialog">
+            <p>Hola mundo!</p>
+        </div>
+        
+        <div class="ui-widget">
+          <label for="tags">Autocomplete!: </label>
+          <input id="tags" />
+        </div>
+        
+        <div id="draggable" >
+            <img src="images/jquery-ui-logo.gif" width="180">
+        </div>
+ 
+                
+    </div>
+    <!-- tab -->
+    <div id="tab_slideshow" class="tab-content">
+        <ul class="slideshow">
+            <li><img src="images/mural1.jpg" style="width: 300px" width="200" height="200" /></li>
+            <li><img src="images/mural2.jpg" style="width: 300px" width="200" height="200" /></li>
+            <li><img src="images/leonardita.jpg" style="width: 300px" width="200" height="200" /></li>
+         </ul>       
+    </div>
+        
+    <!-- tab -->
+    <div id="tab_graficas" class="tab-content">
+         <div id="chart1" style="margin-top:20px; margin-left:20px; width:300px; height:300px;"></div>
+
+        
+    </div>
+    
+    <!-- tab -->
+    <div id="tab_referencias" class="tab-content">
+        
+        HTML KickStart
+        REf: http://www.99lime.com/elements/
+    </div>
+
+</div>
+</body>
+
+</html>
